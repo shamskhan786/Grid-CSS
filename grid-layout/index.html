@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .main-div{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 6fr 1fr;
+            grid-template-rows: 1fr 6fr 1fr;
+            grid-template-areas:"header header header"
+                                  "menu contect other"
+                                  "footer footer footer";
+            gap: 10px;
+            font-size: 30px;
+
+                                  
+
+
+        }
+        header{
+            grid-area: header;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        menu{
+            grid-area: menu;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contect{
+            grid-area: contect;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .other{
+            grid-area: other;
+            background-color: rgb(7, 119, 125);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            grid-area: footer;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+    </style>
+</head>
+<body>
+    
+    <div class="main-div">
+     <header>Header</header>
+     <menu>Menu</menu>
+     <div class="contect">Contect</div>
+     <div class="other">Others Link</div>
+     <footer>Footer</footer>
+
+    </div>
+    
+
+</body>
+</html>
